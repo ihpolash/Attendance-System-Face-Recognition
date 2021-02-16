@@ -4,6 +4,7 @@ certifi
 Django
 djangorestframework
 django-cors-headers
+django-crispy-forms
 dlib
 face-recognition
 numpy
