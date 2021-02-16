@@ -147,3 +147,4 @@ STATICFILES_DIRS = (
 # Simplified static file serving.
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
