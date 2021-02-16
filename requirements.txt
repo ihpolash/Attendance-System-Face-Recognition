@@ -15,6 +15,7 @@ imutils
 scikit-learn
 scipy
 matplotlib
+seaborn
 pytz
 sqlparse
 gunicorn
