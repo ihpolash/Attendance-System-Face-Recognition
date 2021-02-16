@@ -615,6 +615,7 @@ def mark_your_attendance(request):
 		frame = vs.read()
 		
 		# frame = imutils.resize(frame ,width = 800)
+		frame = imutils.imread(frame)
 		
 		gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 		
