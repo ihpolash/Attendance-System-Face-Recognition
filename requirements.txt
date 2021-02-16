@@ -3,6 +3,7 @@ asgiref
 certifi
 Django
 djangorestframework
+django_pandas
 django-cors-headers
 django-crispy-forms
 dlib
