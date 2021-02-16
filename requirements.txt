@@ -12,7 +12,7 @@ numpy
 opencv-python-headless==4.2.0.32
 Pillow
 imutils
-scikit-learn==0.19.2
+scikit-learn==0.20.4
 sklearn
 scipy
 matplotlib
