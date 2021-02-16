@@ -11,6 +11,8 @@ numpy
 opencv-python-headless==4.2.0.32
 Pillow
 imutils
+scikit-learn
+scipy
 matplotlib
 pytz
 sqlparse
