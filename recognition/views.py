@@ -541,7 +541,7 @@ def home(request):
 
 @login_required
 def dashboard(request):
-	if(request.user.username=='polas'):
+	if(request.user.username=='admin'):
 		print("admin")
 		return render(request, 'recognition/admin_dashboard.html')
 	else:
@@ -551,7 +551,7 @@ def dashboard(request):
 
 @login_required
 def add_photos(request):
-	if request.user.username!='polas':
+	if request.user.username!='admin':
 		return redirect('not-authorised')
 	if request.method=='POST':
 		form=usernameForm(request.POST)
@@ -826,7 +826,7 @@ def mark_your_attendance_out(request):
 
 @login_required
 def train(request):
-	if request.user.username!='polas':
+	if request.user.username!='admin':
 		return redirect('not-authorised')
 
 	training_dir='face_recognition_data/training_dataset'
@@ -906,7 +906,7 @@ def view_attendance_home(request):
 
 @login_required
 def view_attendance_date(request):
-	if request.user.username!='polas':
+	if request.user.username!='admin':
 		return redirect('not-authorised')
 	qs=None
 	time_qs=None
@@ -945,7 +945,7 @@ def view_attendance_date(request):
 
 @login_required
 def view_attendance_employee(request):
-	if request.user.username!='polas':
+	if request.user.username!='admin':
 		return redirect('not-authorised')
 	time_qs=None
 	present_qs=None
@@ -1003,7 +1003,7 @@ def view_attendance_employee(request):
 
 @login_required
 def view_my_attendance_employee_login(request):
-	if request.user.username=='polas':
+	if request.user.username=='admin':
 		return redirect('not-authorised')
 	qs=None
 	time_qs=None
